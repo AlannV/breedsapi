@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getAllTemperaments } = require("../Controllers/temperamentController");
+const { getAllTemperaments } = require("../Controlle/temperamentController");
 
 const router = Router();
 

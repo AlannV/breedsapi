@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getAllGroups } = require("../controllers/groupController");
+const { getAllGroups } = require("../Controlle/groupController");
 
 const router = Router();
 
