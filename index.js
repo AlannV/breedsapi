@@ -17,6 +17,6 @@ conn.sync({ force: true }).then(() => {
   fillCountries();
   fillBreeds();
   server.listen(PORT || 8080, () => {
-    console.log("listening at port: 3001");
+    console.log(`listening at port: ${PORT}`);
   });
 });

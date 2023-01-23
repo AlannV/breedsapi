@@ -1,8 +1,8 @@
 const { Router } = require("express");
-const BreedRoutes = require("./breed/breed");
-const TemperamentRoutes = require("./temperament/temperament");
-const GroupRoutes = require("./group/group");
-const CountryRoutes = require("./country/country");
+const BreedRoutes = require("./breed");
+const TemperamentRoutes = require("./temperament");
+const GroupRoutes = require("./group");
+const CountryRoutes = require("./country");
 
 const router = Router();
 

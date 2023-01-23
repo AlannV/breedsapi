@@ -15,6 +15,14 @@ async function addBreed(request, response, next) {
     origin,
   } = request.body;
 
+  const existingBreed = await Breed.findOne({
+    where: { name: name },
+  });
+
+  if (existingBreed) {
+    throw new Error(`Breed with name ${name} already exists`);
+  }
+
   try {
     const breedCreated = await Breed.create({
       name,
