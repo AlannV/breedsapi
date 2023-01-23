@@ -4,7 +4,7 @@ const {
   addBreed,
   getById,
   getByName,
-} = require("../Controlle/breedController");
+} = require("../controllers/breedController");
 
 const router = Router();
 
