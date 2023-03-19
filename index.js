@@ -9,13 +9,13 @@ const { fillBreeds } = require("./src/controllers/breedController.js");
 require("dotenv").config();
 const { PORT } = process.env;
 
-conn.sync({ force: true }).then(() => {
+conn.sync({ force: false }).then(() => {
   console.log("Connected to the DataBase");
 
-  fillTemperaments();
-  fillGroups();
-  fillCountries();
-  fillBreeds();
+  // fillTemperaments();
+  // fillGroups();
+  // fillCountries();
+  // fillBreeds();
   server.listen(PORT || 8080, () => {
     console.log(`listening at port: ${PORT}`);
   });

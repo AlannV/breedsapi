@@ -18,7 +18,7 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, API_KEY, DB_DEPLOY } =
 const sequelize = new Sequelize(DB_DEPLOY, {
   logging: false,
   native: false,
-  dialect: API_KEY,
+  dialect: "postgresql",
 });
 
 const basename = path.basename(__filename);
